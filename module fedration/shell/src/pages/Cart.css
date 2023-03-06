@@ -1,0 +1,25 @@
+.cart {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cart p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.total-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

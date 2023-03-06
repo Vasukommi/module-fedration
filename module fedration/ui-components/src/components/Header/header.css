@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #F5F5F5;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__list-item {
+  margin-left: 1.5rem;
+}
+
+.header__list-item:first-child {
+  margin-left: 0;
+}
+
+.header__list-item a {
+  text-decoration: none;
+  color: #444;
+}
+
+.header__list-item a:hover {
+  color: #666;
+}
+
+.header__list-item.active a {
+  font-weight: bold;
+  color: #000;
+}

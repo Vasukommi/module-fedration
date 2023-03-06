@@ -1,0 +1,62 @@
+/* Define colors */
+:root {
+  --color-primary: #FF3E6C;
+  --color-secondary: #0072C6;
+  --color-neutral-lightest: #F5F5F5;
+  --color-neutral-lighter: #E8E8E8;
+  --color-neutral-light: #D1D1D1;
+  --color-neutral: #B2B2B2;
+  --color-neutral-dark: #595959;
+  --color-neutral-darker: #262626;
+  --color-white: #FFFFFF;
+}
+
+/* Use colors in UI elements */
+.header {
+  background-color: var(--color-neutral-lighter);
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-neutral {
+  color: var(--color-neutral);
+}
+
+/* Use font styles and sizes */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}

@@ -1,0 +1,63 @@
+.users-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .user-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .user-form div {
+    margin-bottom: 10px;
+  }
+  
+  .user-form label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .user-form input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .user-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ef4f4f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .user-form button:hover {
+    background-color: #ef4f4f;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .user-table th {
+    background-color: #ef4f4f;
+    color: #fff;
+  }
+  
+  .user-table td {
+    text-align: center;
+  }
+  
