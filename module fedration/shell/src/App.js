@@ -4,6 +4,8 @@ import './App.css';
 import HomePage from "./pages/Home.jsx";
 import CartContext from "./CartContext.js";
 import router from './router/router.js';
+import { Provider } from "react-redux";
+import store from "./app/store.js";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -12,10 +14,12 @@ function App() {
     setCartItems([...cartItems, product]);
   };
   return (
-    <CartContext.Provider value={{ cartItems, addToCart }}>
-      <RouterProvider router={router} >
-      </RouterProvider>
-    </CartContext.Provider>
+    <Provider store={store}>
+      <CartContext.Provider value={{ cartItems, addToCart }}>
+        <RouterProvider router={router} >
+        </RouterProvider>
+      </CartContext.Provider>
+    </Provider>
   );
 }
 

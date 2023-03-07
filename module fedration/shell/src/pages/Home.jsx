@@ -2,8 +2,6 @@ import React, { useState, useContext } from "react";
 import Header from "../components/header/header.jsx";
 import CartContext from "../CartContext.js";
 import Footer from "../components/footer/footer.jsx"
-
-import CartItem from "uiComponents/cartItem";
 import ProductList from "uiComponents/productList";
 
 
@@ -91,7 +89,6 @@ const Home = () => {
 
   return (
     <div className="home">
-      <CartItem />
       <Header onSearch={handleSearch} />
       <div className="products-container">
         {filteredProducts.map((product) => (

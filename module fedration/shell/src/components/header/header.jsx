@@ -47,6 +47,21 @@ const Header = ({ products, onSearch }) => {
                 Users
               </NavLink>
             </li>
+            <li>
+              <NavLink exact to="/form">
+                Contact
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to="/products">
+                Products
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to="/counter">
+                Counter
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

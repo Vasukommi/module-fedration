@@ -60,6 +60,7 @@ module.exports = {
                 uiComponents: 'uiComponents@http://localhost:3001/remoteEntry.js',
                 childVue: 'childVue@http://localhost:8083/remoteEntry.js',
                 childReact: 'childReact@http://localhost:3002/remoteEntry.js',
+                stateService: 'stateService@http://localhost:3004/remoteEntry.js',
             },
             exposes: {
                 "./root": './src/bootloader.js',

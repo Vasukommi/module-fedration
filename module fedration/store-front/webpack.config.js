@@ -5,7 +5,8 @@ module.exports = {
     mode: 'development',
     devServer: {
         hot: true,
-        port: 3001,
+        port: 3003,
+        historyApiFallback: true,
         headers: {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
@@ -53,21 +54,16 @@ module.exports = {
             template: './public/index.html'
         }),
         new moduleFedration({
-            name: 'uiComponents',
+            name: 'storeFront',
             filename: 'remoteEntry.js',
             remotes: {
-                root: 'root@http://localhost:3000/remoteEntry.js'
+                uiComponents: 'uiComponents@http://localhost:3001/remoteEntry.js',
+                childVue: 'childVue@http://localhost:8083/remoteEntry.js',
+                childReact: 'childReact@http://localhost:3002/remoteEntry.js',
+                stateService: 'stateService@http://localhost:3004/remoteEntry.js'
             },
             exposes: {
-                "./banner": "./src/components/banner/banner.jsx",
-                "./button": "./src/components/button/button.jsx",
-                "./footer": "./src/components/footer/footer.jsx",
-                "./productList": "./src/components/productList/productList.jsx",
-                "./header": "./src/components/header/header.jsx",
-                "./cartItem": "./src/components/cart/cart.jsx",
-                "./ContactForm": "./src/components/forms/forms.jsx",
-                "./infoCard": "./src/components/infoCard/infoCard.jsx",
-                "./card": "./src/components/card/card.jsx"
+                "./root": './src/bootloader.js',
             },
             shared: {
                 react: {
